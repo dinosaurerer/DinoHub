@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dino 网站导航 - 个人工具集合">
+    <meta name="keywords" content="导航,工具,网盘,博客,图床">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Dino 网站导航</title>
+
+</head>
+
+<body>
+    <!-- 鼠标点击动画容器 -->
+    <div id="click-animation-container"></div>
+
+    <!-- 开场动画 -->
+    <div id="intro-animation" class="intro-animation">
+        <div class="animation-content">
+            <h1 class="intro-title">Dino导航</h1>
+
+        </div>
+
+        <!-- 顶部导航栏 -->
+        <header class="header dark-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="Dino导航Logo" width="50" height="50">
+
+
+
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#home" class="active">首页</a></li>
+                        <li><a href="#tools">工具集合</a></li>
+                        <li><a href="#community">社区</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+    <!-- 移动端菜单 -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home" class="active">首页</a></li>
+            <li><a href="#tools">工具集合</a></li>
+            <li><a href="#community">社区</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </div>
+    </header>
+    <main class="main">
+        <!-- 主视觉区域 -->
+        <section id="home" class="hero">
+            <div class="snow-container" id="snow-container"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Dino工具导航</h2>
+                    <p class="hero-subtitle">一站式个人工具集合平台</p>
+                    <div class="hero-actions">
+                        <a href="#tools" class="btn btn-primary">工具集合</a>
+                        <a href="#community" class="btn btn-outline">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 工具集合 -->
+        <section id="tools" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">我的工具</h2>
+                    <p class="section-subtitle">个人开发和使用的工具集合</p>
+                </div>
+                <section class="card-area">
+                    <!-- Card: DinoSpace -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--dinosapce">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
+                                            </svg>
+
+
+                                            <h2 class="card-front__heading">
+                                                个人网盘
+                                            </h2>
+                                            <p class="card-front__text-price">
+                                                DinoSpace
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--dinosapce">
+                                                查看详情
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <video class="video__container" autoplay muted loop>
+                                            <source class="video__media"
+                                                src="https://assets.mixkit.co/videos/1704/1704-720.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--dinosapce">
+                                        个人云存储
+                                    </h3>
+                                    <p class="inside-page__text">
+                                        免费安全的个人云存储，随时随地存取你的文件。
+                                    </p>
+                                    <a href="https://pan.094694.xyz/"
+                                        class="inside-page__btn inside-page__btn--dinosapce">访问网站</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Card: DinoBlog -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--dinoblog">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                                            </svg>
+
+                                            <h2 class="card-front__heading">
+                                                博客
+                                            </h2>
+                                            <p class="card-front__text-price">
+                                                DinoBlog
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--dinoblog">
+                                                查看详情
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-back">
+                                        <video class="video__container" autoplay muted loop>
+                                            <source class="video__media"
+                                                src="https://assets.mixkit.co/videos/42655/42655-720.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--dinoblog">
+                                        个人博客空间
+                                    </h3>
+                                    <p class="inside-page__text">
+                                        记录思考、分享技术的个人博客空间。
+                                    </p>
+                                    <a href="https://blog.094694.xyz/"
+                                        class="inside-page__btn inside-page__btn--dinoblog">访问网站</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Card: DinoImBed -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--dinoimbed">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                            </svg>
+
+
+                                            <h2 class="card-front__heading">
+                                                图床
+                                            </h2>
+                                            <p class="card-front__text-price">
+                                                DinoImBed
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--dinoimbed">
+                                                查看详情
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <video class="video__container" autoplay muted loop>
+                                            <source class="video__media"
+                                                src="https://assets.mixkit.co/videos/46425/46425-360.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--dinoimbed">
+                                        图片托管服务
+                                    </h3>
+                                    <p class="inside-page__text">
+                                        快速稳定的图片托管服务，支持外链。
+                                    </p>
+                                    <a href="https://imgbed.094694.xyz/"
+                                        class="inside-page__btn inside-page__btn--dinoimbed">访问网站</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Card: DinoMail -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--dinomail">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                                            </svg>
+
+
+                                            <h2 class="card-front__heading">
+                                                临时邮箱
+                                            </h2>
+                                            <p class="card-front__text-price">
+                                                DinoMail
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--dinomail">
+                                                查看详情
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <video class="video__container" autoplay muted loop>
+                                            <source class="video__media"
+                                                src="https://assets.mixkit.co/videos/42606/42606-720.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--dinomail">
+                                        隐私保护邮箱
+                                    </h3>
+                                    <p class="inside-page__text">
+                                        一次性邮箱，保护你的隐私不被泄露。
+                                    </p>
+                                    <a href="https://mail.094694.xyz/"
+                                        class="inside-page__btn inside-page__btn--dinomail">访问网站</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Card: DinoShort -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--dinoshort">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                                            </svg>
+
+
+
+                                            <h2 class="card-front__heading">
+                                                短链接生成
+                                            </h2>
+                                            <p class="card-front__text-price">
+                                                DinoShort
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--dinoshort">
+                                                查看详情
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <video class="video__container" autoplay muted loop>
+                                            <source class="video__media"
+                                                src="https://assets.mixkit.co/videos/31536/31536-720.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--dinoshort">
+                                        短网址服务
+                                    </h3>
+                                    <p class="inside-page__text">
+                                        将长链接转为简洁易记的短网址。
+                                    </p>
+                                    <a href="https://short.094694.xyz/"
+                                        class="inside-page__btn inside-page__btn--dinoshort">访问网站</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Card: DinoPayQrcode -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--dinopayqrcode">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 3.75 9.375v-4.5ZM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 0 1-1.125-1.125v-4.5ZM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 13.5 9.375v-4.5Z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M6.75 6.75h.75v.75h-.75v-.75ZM6.75 16.5h.75v.75h-.75v-.75ZM16.5 6.75h.75v.75h-.75v-.75ZM13.5 13.5h.75v.75h-.75v-.75ZM13.5 19.5h.75v.75h-.75v-.75ZM19.5 13.5h.75v.75h-.75v-.75ZM19.5 19.5h.75v.75h-.75v-.75ZM16.5 16.5h.75v.75h-.75v-.75Z" />
+                                            </svg>
+
+                                            <h2 class="card-front__heading">
+                                                聚合码生成
+                                            </h2>
+                                            <p class="card-front__text-price">
+                                                DinoPayQrcode
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--dinopayqrcode">
+                                                查看详情
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-back">
+                                        <video class="video__container" autoplay muted loop>
+                                            <source class="video__media"
+                                                src="https://assets.mixkit.co/videos/23523/23523-720.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--dinopayqrcode">
+                                        多支付平台聚合
+                                    </h3>
+                                    <p class="inside-page__text">
+                                        一键生成多支付平台聚合收款码。
+                                    </p>
+                                    <a href="https://pay.094694.xyz/"
+                                        class="inside-page__btn inside-page__btn--dinopayqrcode">访问网站</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Card: DinoAnniv -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--dinoanniv">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75-1.5.75a3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0L3 16.5m15-3.379a48.474 48.474 0 0 0-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 0 1 3 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 0 1 6 13.12M12.265 3.11a.375.375 0 1 1-.53 0L12 2.845l.265.265Zm-3 0a.375.375 0 1 1-.53 0L9 2.845l.265.265Zm6 0a.375.375 0 1 1-.53 0L15 2.845l.265.265Z" />
+                                            </svg>
+
+
+                                            <h2 class="card-front__heading">
+                                                纪念网站
+                                            </h2>
+                                            <p class="card-front__text-price">
+                                                DinoAnniv
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--dinoanniv">
+                                                查看详情
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <video class="video__container" autoplay muted loop>
+                                            <source class="video__media"
+                                                src="https://assets.mixkit.co/videos/23582/23582-720.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--dinoanniv">
+                                        重要日子记录
+                                    </h3>
+                                    <p class="inside-page__text">
+                                        记录重要日子，定制专属纪念页面。
+                                    </p>
+                                    <a href="https://zsyxy.dpdns.org/"
+                                        class="inside-page__btn inside-page__btn--dinoanniv">访问网站</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Card: DinoImBox -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--dinoimbox">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M21.75 17.25v-.228a4.5 4.5 0 0 0-.12-1.03l-2.268-9.64a3.375 3.375 0 0 0-3.285-2.602H7.923a3.375 3.375 0 0 0-3.285 2.602l-2.268 9.64a4.5 4.5 0 0 0-.12 1.03v.228m19.5 0a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3m19.5 0a3 3 0 0 0-3-3H5.25a3 3 0 0 0-3 3m16.5 0h.008v.008h-.008v-.008Zm-3 0h.008v.008h-.008v-.008Z" />
+                                            </svg>
+
+
+                                            <h2 class="card-front__heading">
+                                                图床(旧版)
+                                            </h2>
+                                            <p class="card-front__text-price">
+                                                DinoImBox
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--dinoimbox">
+                                                查看详情
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <video class="video__container" autoplay muted loop>
+                                            <source class="video__media"
+                                                src="https://assets.mixkit.co/videos/30031/30031-720.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--dinoimbox">
+                                        经典版图床
+                                    </h3>
+                                    <p class="inside-page__text">
+                                        经典版图床，依旧稳定可靠。
+                                    </p>
+                                    <a href="https://uppic.dpdns.org/"
+                                        class="inside-page__btn inside-page__btn--dinoimbox">访问网站</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Card: DinoSubs -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--dinosubs">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M12.75 19.5v-.75a7.5 7.5 0 0 0-7.5-7.5H4.5m0-6.75h.75c7.87 0 14.25 6.38 14.25 14.25v.75M6 18.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                            </svg>
+
+
+                                            <h2 class="card-front__heading">
+                                                订阅提醒
+                                            </h2>
+                                            <p class="card-front__text-price">
+                                                DinoSubs
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--dinosubs">
+                                                查看详情
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <video class="video__container" autoplay muted loop>
+                                            <source class="video__media"
+                                                src="https://assets.mixkit.co/videos/6838/6838-720.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--dinosubs">
+                                        订阅管理助手
+                                    </h3>
+                                    <p class="inside-page__text">
+                                        订阅管理助手，不再错过任何更新。
+                                    </p>
+                                    <a href="https://zhyx.qzz.io/"
+                                        class="inside-page__btn inside-page__btn--dinosubs">访问网站</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Card: Dinolove -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--dinolove">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                                            </svg>
+
+                                            <h2 class="card-front__heading">
+                                                特效网站
+                                            </h2>
+                                            <p class="card-front__text-price">
+                                                DinoLove
+                                            </p>
+                                        </div>
+
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--dinolove">
+                                                查看详情
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-back">
+                                        <video class="video__container" autoplay muted loop>
+                                            <source class="video__media"
+                                                src="https://assets.mixkit.co/videos/46634/46634-720.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--dinolove">
+                                        HTML动画特效
+                                    </h3>
+                                    <p class="inside-page__text">
+                                        浪漫的HTML动画特效页面，适合表白或纪念。
+                                    </p>
+                                    <a href="https://love.094694.xyz/"
+                                        class="inside-page__btn inside-page__btn--dinolove">访问网站</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+        <!-- 社区信息 -->
+        <section id="community" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">社区交流</h2>
+                </div>
+                <div class="section-content">
+                    <div class="community-grid">
+                        <div class="community-card">
+                            <h3>技术交流</h3>
+                            <p>欢迎加入我们的技术交流社区。</p>
+                            <p class="highlight">Dino技术社区</p>
+                            <a href="https://short.094694.xyz/dino-dy" target="_blank" class="btn btn-primary">加入社区</a>
+                        </div>
+                        <div class="community-card">
+                            <h3>微信公众号</h3>
+                            <p>关注公众号获取最新更新和技术分享。</p>
+                            <p class="highlight">Dino技术分享</p>
+                            <img src="assets/qrcode.jpg" alt="公众号二维码" class="qrcode">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">联系我们</h2>
+                </div>
+                <div class="section-content">
+                    <div class="contact-grid">
+                        <div class="contact-card">
+                            <h3>反馈与建议</h3>
+                            <p>如果您有任何反馈或建议，欢迎联系我们：</p>
+                            <ul class="contact-list">
+                                <li>邮箱：your-email@example.com</li>
+                                <li>GitHub：github.com/yourusername</li>
+                            </ul>
+                        </div>
+                        <div class="contact-card">
+                            <h3>关于本站</h3>
+                            <p>Dino导航是一个个人工具集合平台，致力于提供便捷的在线工具服务。</p>
+                            <p>感谢您的使用与支持！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 音乐播放器 -->
+        <div id="music-player" class="music-player">
+            <button id="music-toggle" class="music-btn">🎵</button>
+            <audio id="background-music" loop>
+                <source src="assets/background-music.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>&copy; 2024 Dino导航. 保留所有权利.</p>
+                    <p>维护团队：Dino开发组</p>
+                    <p>邮箱：your-email@example.com</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+        <script src="js/snow.js"></script>
+        <script src="js/meteor.js"></script>
+        <script src="js/cursorTrail.js"></script>
+        <script src="js/deviceDetection.js"></script>
+    </main>
+</body>
+
+</html>

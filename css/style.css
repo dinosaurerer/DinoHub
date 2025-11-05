@@ -1,0 +1,1491 @@
+/* 重置样式 */
+/* ========== 全局重置与基础设置 ========== */
+
+/* Reset */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* 基础字号（62.5% = 10px，便于用 rem 单位）*/
+html {
+    font-size: 62.5%;
+}
+
+/* 全局字体与排版基础 */
+body {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    line-height: 1.5;
+    background-color: #fafafa;
+    /* 可根据需求改背景色 */
+    color: #333;
+}
+
+/* Typography =======================*/
+
+/* Headings */
+
+/* Main heading for card's front cover */
+.card-front__heading {
+    font-size: 1.5rem;
+    margin-top: .25rem;
+}
+
+/* Main heading for inside page */
+.inside-page__heading {
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+/* Mixed */
+
+/* For both inside page's main heading and 'view me' text on card front cover */
+.inside-page__heading,
+.card-front__text-view {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: .2rem;
+}
+
+/* DinoSpace 个人网盘 - 科技蓝 */
+.inside-page__heading--dinosapce,
+.card-front__text-view--dinosapce {
+    color: #2563eb;
+}
+
+/* DinoBlog 博客 - 深翡翠绿 */
+.inside-page__heading--dinoblog,
+.card-front__text-view--dinoblog {
+    color: #059669;
+}
+
+/* DinoImBed 图床 - 琥珀橙 */
+.inside-page__heading--dinoimbed,
+.card-front__text-view--dinoimbed {
+    color: #d97706;
+}
+
+/* DinoMail 临时邮箱 - 深紫色 */
+.inside-page__heading--dinomail,
+.card-front__text-view--dinomail {
+    color: #7c3aed;
+}
+
+/* DinoShort 短链接 - 深青色 */
+.inside-page__heading--dinoshort,
+.card-front__text-view--dinoshort {
+    color: #0d9488;
+}
+
+/* DinoPayQrcode 聚合码 - 深玫瑰红 */
+.inside-page__heading--dinopayqrcode,
+.card-front__text-view--dinopayqrcode {
+    color: #db2777;
+}
+
+/* DinoAnniv 纪念网站 - 勃艮第红 */
+.inside-page__heading--dinoanniv,
+.card-front__text-view--dinoanniv {
+    color: #991b1b;
+}
+
+/* DinoImBox 图床旧版 - 石板灰 */
+.inside-page__heading--dinoimbox,
+.card-front__text-view--dinoimbox {
+    color: #475569;
+}
+
+/* DinoSubs 订阅提醒 - 深靛蓝 */
+.inside-page__heading--dinosubs,
+.card-front__text-view--dinosubs {
+    color: #3730a3;
+}
+
+/* Dino-love 特效网站 - 深紫红色 */
+.inside-page__heading--dinolove,
+.card-front__text-view--dinolove {
+    color: #9d174d;
+}
+
+/* Front cover */
+
+.card-front__tp {
+    color: #fafbfa;
+}
+
+/* For pricing text on card front cover */
+.card-front__text-price {
+    font-size: 1.2rem;
+    margin-top: -.2rem;
+}
+
+/* Back cover */
+
+/* For inside page's body text */
+.inside-page__text {
+    color: #333;
+}
+
+/* Icons ===========================================*/
+
+.card-front__icon {
+    fill: #fafbfa;
+    font-size: 3vw;
+    height: 3.25rem;
+    margin-top: -.5rem;
+    width: 3.25rem;
+}
+
+/* Buttons =================================================*/
+
+.inside-page__btn {
+    background-color: transparent;
+    border: 3px solid;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    overflow: hidden;
+    padding: .7rem .75rem;
+    position: relative;
+    text-decoration: none;
+    transition: all .3s ease;
+    width: 90%;
+    z-index: 10;
+}
+
+.inside-page__btn::before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scaleY(0);
+    transition: all .3s ease;
+    width: 100%;
+    z-index: -1;
+}
+
+.inside-page__btn--dinoimbed {
+    border-color: #d97706;
+    color: #d97706;
+}
+
+.inside-page__btn--dinoimbed::before {
+    background-color: #d97706;
+}
+
+.inside-page__btn--dinomail {
+    border-color: #7c3aed;
+    color: #7c3aed;
+}
+
+.inside-page__btn--dinomail::before {
+    background-color: #7c3aed;
+}
+
+.inside-page__btn--dinoshort {
+    border-color: #0d9488;
+    color: #0d9488;
+}
+
+.inside-page__btn--dinoshort::before {
+    background-color: #0d9488;
+}
+
+.inside-page__btn--dinopayqrcode {
+    border-color: #db2777;
+    color: #db2777;
+}
+
+.inside-page__btn--dinopayqrcode::before {
+    background-color: #db2777;
+}
+
+.inside-page__btn--dinoanniv {
+    border-color: #991b1b;
+    color: #991b1b;
+}
+
+.inside-page__btn--dinoanniv::before {
+    background-color: #991b1b;
+}
+
+.inside-page__btn--dinoimbox {
+    border-color: #475569;
+    color: #475569;
+}
+
+.inside-page__btn--dinoimbox::before {
+    background-color: #475569;
+}
+
+.inside-page__btn--dinosubs {
+    border-color: #3730a3;
+    color: #3730a3;
+}
+
+.inside-page__btn--dinosubs::before {
+    background-color: #3730a3;
+}
+
+.inside-page__btn--dinolove {
+    border-color: #9d174d;
+    color: #9d174d;
+}
+
+.inside-page__btn--dinolove::before {
+    background-color: #9d174d;
+}
+/* Layout Structure=========================================*/
+
+.main {
+    background: linear-gradient(to bottom right,
+            #eee8dd);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* 改为顶部对齐 */
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+/* Container to hold all cards in one place */
+.card-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /* 基于展开宽度计算 */
+    gap: 3rem;
+    /* 拉大间距 */
+    justify-content: center;
+    /* 居中对齐，保证两端均匀 */
+    padding: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.card-section {
+    display: flex;
+    justify-content: center;
+}
+
+/* A container to hold the flip card and the inside page */
+.card {
+    background-color: rgba(0, 0, 0, .05);
+    box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.5);
+    height: 15rem;
+    position: relative;
+    transition: all 1s ease;
+    width: 15rem;
+}
+
+/* Flip card - covering both the front and inside front page */
+
+/* An outer container to hold the flip card. This excludes the inside page */
+.flip-card {
+    height: 15rem;
+    perspective: 100rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    visibility: hidden;
+    width: 15rem;
+    z-index: 100;
+}
+
+/* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
+/* This is done so content in the inside page can be selected */
+.flip-card>* {
+    visibility: visible;
+}
+
+/* An inner container to hold the flip card. This excludes the inside page */
+.flip-card__container {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    width: 100%;
+}
+
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* Styling for the front side of the flip card */
+
+/* container for the front side */
+.card-front {
+    background-color: #fafbfa;
+    height: 15rem;
+    width: 15rem;
+}
+
+/* Front side's top section */
+.card-front__tp {
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    justify-content: center;
+    padding: .75rem;
+}
+
+.card-front__tp--dinosapce {
+  background: linear-gradient(to bottom, #2563eb, #1d4ed8);
+}
+
+.card-front__tp--dinoblog {
+  background: linear-gradient(to bottom, #059669, #047857);
+}
+
+.card-front__tp--dinoimbed {
+  background: linear-gradient(to bottom, #d97706, #b45309);
+}
+
+.card-front__tp--dinomail {
+  background: linear-gradient(to bottom, #7c3aed, #6d28d9);
+}
+
+.card-front__tp--dinoshort {
+  background: linear-gradient(to bottom, #0d9488, #0f766e);
+}
+
+.card-front__tp--dinopayqrcode {
+  background: linear-gradient(to bottom, #db2777, #be185d);
+}
+
+.card-front__tp--dinoanniv {
+  background: linear-gradient(to bottom, #991b1b, #7f1d1d);
+}
+
+.card-front__tp--dinoimbox {
+  background: linear-gradient(to bottom, #475569, #374151);
+}
+
+.card-front__tp--dinosubs {
+  background: linear-gradient(to bottom, #3730a3, #312e81);
+}
+
+.card-front__tp--dinolove {
+  background: linear-gradient(to bottom, #9d174d, #831843);
+}
+
+/* Front card's bottom section */
+.card-front__bt {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for the back side of the flip card */
+
+.card-back {
+    background-color: #fafbfa;
+    transform: rotateY(180deg);
+}
+
+/* Specifically targeting the <video> element */
+.video__container {
+    clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Inside page */
+
+.inside-page {
+    background-color: #fafbfa;
+    box-shadow: inset 20rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.25);
+    height: 100%;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    transition: all 1s ease;
+    width: 15rem;
+    z-index: 1;
+}
+
+.inside-page__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+/* Functionality ====================================*/
+
+/* This is to keep the card centered (within its container) when opened */
+.card:hover {
+    box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0, 0, 0, 0.75);
+    width: 30rem;
+    z-index: 10;
+    /* 添加z-index确保在最上层 */
+    position: relative;
+    /* 确保z-index生效 */
+}
+
+/* When the card is hovered, the flip card container will rotate */
+.card:hover .flip-card__container {
+    transform: rotateY(-180deg);
+}
+
+/* When the card is hovered, the shadow on the inside page will shrink to the left */
+.card:hover .inside-page {
+    box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Footer ====================================*/
+
+.footer {
+    background-color: #333;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* 响应式调整 */
+@media (max-width: 1200px) {
+    .card-section {
+        width: calc(33.333% - 1.5rem);
+        /* 中等屏幕显示3个 */
+    }
+}
+
+@media (max-width: 900px) {
+    .card-section {
+        width: calc(50% - 1.5rem);
+        /* 小屏幕显示2个 */
+    }
+}
+
+@media (max-width: 600px) {
+    .card-section {
+        width: 100%;
+        /* 超小屏幕显示1个 */
+    }
+}
+
+/* 鼠标点击动画 */
+.click-animation {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 124, 255, 0.8), rgba(0, 124, 255, 0.1));
+    box-shadow: 0 0 10px rgba(0, 124, 255, 0.5);
+    animation: clickEffect 0.8s ease-out forwards;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+@keyframes clickEffect {
+    0% {
+        transform: scale(0.1);
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(0, 124, 255, 0.8);
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.7;
+        box-shadow: 0 0 20px rgba(0, 124, 255, 0.6);
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+        box-shadow: 0 0 30px rgba(0, 124, 255, 0);
+    }
+}
+
+/* 鼠标移动特效 */
+.cursor-trail {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 124, 255, 0.6), rgba(0, 124, 255, 0.1));
+    box-shadow: 0 0 8px rgba(0, 124, 255, 0.4);
+    pointer-events: none;
+    z-index: 9998;
+    animation: trailFade 0.6s ease-out forwards;
+}
+
+@keyframes trailFade {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+        box-shadow: 0 0 8px rgba(0, 124, 255, 0.6);
+    }
+
+    100% {
+        transform: scale(0.2);
+        opacity: 0;
+        box-shadow: 0 0 15px rgba(0, 124, 255, 0);
+    }
+}
+
+/* 彩虹拖尾特效 */
+.rainbow-trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9997;
+    animation: rainbowTrail 1s ease-out forwards;
+}
+
+@keyframes rainbowTrail {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+        box-shadow: 0 0 10px currentColor;
+    }
+
+    100% {
+        transform: scale(0.1);
+        opacity: 0;
+        box-shadow: 0 0 20px currentColor;
+    }
+}
+
+/* 基础样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* 容器 */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 顶部导航栏 */
+.header {
+    background-color: #000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header.hidden {
+    transform: translateY(-100%);
+}
+
+/* 鼠标悬停时立即显示菜单 */
+.header:hover {
+    transform: translateY(0);
+}
+
+/* 移动端菜单按钮 */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+/* 移动端菜单 */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.mobile-menu.show {
+    display: block;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu li {
+    margin-bottom: 15px;
+}
+
+.mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 0;
+}
+
+/* 下拉菜单在移动端的样式 */
+.mobile-dropdown {
+    position: relative;
+}
+
+.mobile-dropdown-content {
+    display: none;
+    background-color: #333;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.mobile-dropdown-content.show {
+    display: block;
+}
+
+.mobile-dropdown-content a {
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .header-content {
+        justify-content: space-between;
+    }
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo img {
+    display: block;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin-left: 30px;
+    position: relative;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s;
+    position: relative;
+    display: block;
+    padding: 10px 0;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #007CFF;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007CFF;
+    transition: width 0.3s;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+    width: 100%;
+}
+
+/* 下拉菜单 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f8f9fa;
+    color: #007CFF;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #007CFF;
+}
+
+/* 主视觉区域 */
+.hero {
+    background: #000;
+    color: #fff;
+    padding: 160px 0 120px;
+    text-align: center;
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.snow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.snowflake {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.hero-title {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+/* 按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background-color: #007CFF;
+    color: #fff;
+}
+
+.community-card .btn-primary {
+    margin-top: 48px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007CFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0066cc;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #007CFF;
+    border-color: #007CFF;
+}
+
+.btn-outline:hover {
+    background-color: rgba(0, 124, 255, 0.05);
+}
+
+/* 服务器状态 */
+.server-status-section {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.status-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-label {
+    margin-right: 10px;
+    font-weight: 500;
+    color: #666;
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status-indicator.online {
+    background-color: #00C179;
+}
+
+.status-text {
+    font-weight: 500;
+    color: #666;
+}
+
+/* 区块样式 */
+.section {
+    padding: 80px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+/* 信息网格 */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #eee;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+}
+
+.info-list li:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-weight: 500;
+    margin-right: 10px;
+    min-width: 100px;
+}
+
+.game-modes .mode-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.game-modes .mode-item:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.mode-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #000;
+    font-weight: 500;
+}
+
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    padding: 8px 0 8px 20px;
+    position: relative;
+}
+
+.feature-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 6px;
+    height: 6px;
+    background-color: #007CFF;
+    border-radius: 50%;
+}
+
+.join-steps {
+    padding-left: 0;
+    counter-reset: step-counter;
+    list-style: none;
+}
+
+.join-steps li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.join-steps li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #007CFF;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.join-steps li:last-child {
+    margin-bottom: 0;
+}
+
+.join-steps strong {
+    color: #007CFF;
+    font-weight: 500;
+}
+
+/* 社区网格 */
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.community-card {
+    font-size: 1.3rem;
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border: 1px solid #eee;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.community-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.community-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.highlight {
+    font-weight: 500;
+    color: #007CFF;
+    margin-top: 20px;    /* 保持与上方元素的间距 */
+    margin-bottom: 5px;  /* 减少与二维码的间距 */
+    font-size: 18px;
+}
+
+.qrcode {
+    max-width: 150px;
+    margin: 3px auto 15px; /* 整体上移 */
+    display: block;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+/* 活动区域 */
+.activities h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.activity-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border: 1px solid #eee;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.activity-card h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: 500;
+}
+
+/* 联系方式网格 */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.contact-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+}
+
+.contact-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.contact-list {
+    list-style: none;
+    margin-top: 15px;
+    padding-left: 0;
+}
+
+.contact-list li {
+    padding: 8px 0 8px 20px;
+    position: relative;
+}
+
+.contact-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 6px;
+    height: 6px;
+    background-color: #007CFF;
+    border-radius: 50%;
+}
+
+/* 致谢名单 */
+.credits-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.credits-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+}
+
+.credits-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.credits-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.credits-list li:last-child {
+    border-bottom: none;
+}
+
+.credits-list li::before {
+    content: '•';
+    color: #007CFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* 友商推荐 */
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.partner-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.partner-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: 500;
+}
+
+/* 页脚 */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* 音乐播放器 */
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.music-btn {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.music-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+.music-btn.playing {
+    background: rgba(0, 124, 255, 0.7);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .header-content {
+        flex-direction: row;
+        padding: 15px 0;
+        align-items: center;
+    }
+
+    .nav ul {
+        margin-top: 0;
+    }
+
+    .nav li {
+        margin: 0 10px;
+    }
+
+    .hero {
+        padding: 140px 0 80px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 10rem;
+    }
+
+    .section-subtitle {
+        font-size:6rem;
+    }
+
+    .info-grid,
+    .community-grid,
+    .activity-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .info-card,
+    .community-card,
+    .activity-card,
+    .contact-card {
+        padding: 20px;
+    }
+
+    .community-card {
+        padding: 30px 20px;
+    }
+
+    .footer {
+        padding: 30px 0;
+    }
+}
+
+/* 平板设备样式调整 */
+body.device-tablet .hero-title {
+    font-size: 36px;
+}
+
+body.device-tablet .hero-subtitle {
+    font-size: 18px;
+}
+
+body.device-tablet .section-subtitle {
+    font-size: 16px;
+}
+
+body.device-tablet .btn {
+    padding: 10px 25px;
+    font-size: 14px;
+}
+
+body.device-tablet .section {
+    padding: 70px 0;
+}
+
+body.device-tablet .section-title {
+    font-size: 32px;
+}
+
+body.device-tablet .info-grid,
+body.device-tablet .community-grid,
+body.device-tablet .activity-grid,
+body.device-tablet .contact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+body.device-tablet .info-card,
+body.device-tablet .community-card,
+body.device-tablet .activity-card,
+body.device-tablet .contact-card {
+    padding: 25px;
+}
+
+/* Mac设备样式调整 */
+body.device-desktop .hero-title {
+    font-size: 42px;
+}
+
+body.device-desktop .hero {
+    padding: 150px 0 110px;
+}
+
+/* 针对高分辨率桌面设备的优化 */
+@media (min-width: 1400px) {
+    body.device-desktop .container {
+        max-width: 1320px;
+    }
+
+    body.device-desktop .hero-title {
+        font-size: 48px;
+    }
+
+    body.device-desktop .section {
+        padding: 90px 0;
+    }
+}
